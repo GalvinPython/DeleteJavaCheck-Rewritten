@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteJavaCheckRewritten.CLI", "DeleteJavaCheckRewritten.CLI\DeleteJavaCheckRewritten.CLI.csproj", "{CD0EC3D7-90AA-42A6-9E11-56638B95851C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteJavaCheckRewritten.Core", "DeleteJavaCheckRewritten.Core\DeleteJavaCheckRewritten.Core.csproj", "{54672D47-5737-4818-B5CE-F51F7746CAB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD0EC3D7-90AA-42A6-9E11-56638B95851C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0EC3D7-90AA-42A6-9E11-56638B95851C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0EC3D7-90AA-42A6-9E11-56638B95851C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0EC3D7-90AA-42A6-9E11-56638B95851C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54672D47-5737-4818-B5CE-F51F7746CAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54672D47-5737-4818-B5CE-F51F7746CAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54672D47-5737-4818-B5CE-F51F7746CAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54672D47-5737-4818-B5CE-F51F7746CAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02541247-94A2-453E-9997-8B8F0D9E152C}
+	EndGlobalSection
+EndGlobal
