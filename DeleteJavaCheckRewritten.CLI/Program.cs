@@ -25,13 +25,12 @@ namespace DeleteJavaCheckRewritten.CLI
                 launcherName = "Minecraft Bedrock Launcher"
             };
 
-            CoreDetails.Test();
-
+            // Print out the target path for the launchers
             Console.WriteLine("\nINFO: Targeted Launcher Locations");
             Delete deleteLegacy = new(legacyLauncherDetails);
             Delete deleteNew = new(newLauncherDetails);
-            deleteLegacy.Test2();
-            deleteNew.Test2();
+            deleteLegacy.PrintDetails();
+            deleteNew.PrintDetails();
 
             // Run detections for legacy and new launcher details
             Console.WriteLine("\nTASK: Running Detections!");

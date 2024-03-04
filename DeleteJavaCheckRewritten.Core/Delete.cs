@@ -10,10 +10,23 @@ namespace DeleteJavaCheckRewritten.Core
     {
         private readonly CoreDetails coreDetails = coreDetails;
 
-        public void Test2()
+        public void PrintDetails()
         {
             Console.WriteLine(coreDetails.launcherName);
             Console.WriteLine(coreDetails.launcherPath);
+        }
+
+        // TODO: Link DeleteFiles() to Program.cs
+        public void DeleteFiles()
+        {
+            try
+            {
+                File.Delete(coreDetails.launcherPath + "\\javacheck.jar");
+            } catch (Exception e) {
+                Console.WriteLine($"Error: {e}");
+                throw;
+            }
+            Console.WriteLine("File deleted!");
         }
     }
 }
