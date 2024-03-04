@@ -19,6 +19,7 @@ namespace DeleteJavaCheckRewritten.Core
         // TODO: Link DeleteFiles() to Program.cs
         public void DeleteFiles()
         {
+            Console.WriteLine($"Deleting {coreDetails.launcherName}");
             try
             {
                 File.Delete(coreDetails.launcherPath + "\\javacheck.jar");

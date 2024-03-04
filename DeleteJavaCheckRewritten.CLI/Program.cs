@@ -13,7 +13,7 @@ namespace DeleteJavaCheckRewritten.CLI
         {
             Console.WriteLine("DeleteJavaCheck Rewritten Running!");
             Console.WriteLine("https://github.com/GalvinPython/DeleteJavaCheck-Rewritten");
-            Console.WriteLine("NOTE: Custom Install Locations are not yet supported\n");
+            Console.WriteLine("NOTE: Custom Install Locations are not yet supported!");
             CoreDetails legacyLauncherDetails = new()
             {
                 launcherPath = "C:\\Program Files (x86)\\Minecraft Launcher\\game",
@@ -39,6 +39,13 @@ namespace DeleteJavaCheckRewritten.CLI
 
             (bool legacyDirExists, bool legacyFileExists) = detectLegacy.RunDetection();
             (bool newDirExists, bool newFileExists) = detectNew.RunDetection();
+
+            if (legacyFileExists) deleteLegacy.DeleteFiles();
+            if (newFileExists) deleteNew.DeleteFiles();
+
+            // End program
+            Console.WriteLine("\nDeleteJavaCheckRewritten has finished its job. Please press any button to close the program. We keep the window opened so you can see the results");
+            Console.ReadKey();
         }
     }
 }

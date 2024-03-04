@@ -5,6 +5,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>DeleteJavaCheckRewritten</AssemblyName>
+    <Authors>GalvinPython</Authors>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <Version>$(AssemblyVersion)</Version>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
