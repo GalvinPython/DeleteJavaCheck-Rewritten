@@ -16,7 +16,6 @@ namespace DeleteJavaCheckRewritten.Core
             Console.WriteLine(coreDetails.launcherPath);
         }
 
-        // TODO: Link DeleteFiles() to Program.cs
         public void DeleteFiles()
         {
             Console.WriteLine($"Deleting {coreDetails.launcherName}");

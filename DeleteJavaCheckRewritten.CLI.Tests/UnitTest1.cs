@@ -24,10 +24,13 @@ namespace DeleteJavaCheckRewritten.CLI.Tests
         [Test]
         public void TestJavaCheckJarDeletion()
         {
-            // TODO: Access the CLI for testing
-            // Verify that JavaCheck.jar files are deleted
-            Assert.IsFalse(File.Exists(javaCheckJarPathInMinecraftLauncher), "JavaCheck.jar still exists in Minecraft Launcher directory");
-            Assert.IsFalse(File.Exists(javaCheckJarPathInWindowsStoreApp), "JavaCheck.jar still exists in Windows Store App directory");
+            Assert.Multiple(() =>
+            {
+                // TODO: Access the CLI for testing
+                // Verify that JavaCheck.jar files are deleted
+                Assert.That(File.Exists(javaCheckJarPathInMinecraftLauncher), Is.False, "JavaCheck.jar still exists in Minecraft Launcher directory");
+                Assert.That(File.Exists(javaCheckJarPathInWindowsStoreApp), Is.False, "JavaCheck.jar still exists in Windows Store App directory");
+            });
         }
     }
 }
