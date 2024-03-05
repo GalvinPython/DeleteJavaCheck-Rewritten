@@ -10,7 +10,8 @@ _Above, is a video that shows the program in action. Note that File Explorer is 
 _A screenshot showing what happens if the files have already been deleted_
 
 # Requirements
-In order to run this program, you need to have the .NET 8.0 Runtime installed on your PC (the SDK is needed to develop this program).  
+In order to run this program, you need to have the .NET 8.0 Runtime installed on your PC.  
+**NOTE: The SDK is needed to develop this program, however the runtime is only required to actually run the program. You can download the SDK if you want to, that's not a problem, but you won't be able to modify the app without it.**  
 Download from [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 # Changelog
